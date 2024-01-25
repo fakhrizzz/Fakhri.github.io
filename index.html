@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Menu Navigasi</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .perkenalan{
+	margin-left: 5%;
+	margin-top: 10%;
+        }
+        .perkenalan h1{
+	font-size: 50px;
+	color: #212121;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+        }
+        .bjir{
+	position:fixed;
+	width: 100%;
+	height: 100vh;
+	background: #3C4048;
+        }
+        .perkenalan h1{
+            color:white;
+        }
+    
+        .perkenalan p{
+            color:white;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+        .wave-img {
+            width: 100%; 
+            max-width: 100%; 
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .orang {
+            width: 100%; 
+            max-width: 450px; 
+            display: block;
+            position: absolute;
+            top: -300px;
+            right: 220px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <img src="css/banner.png" alt="banner" width="100%">
+
+        <div id="navbar" class="w3-bar w3-padding-16 w3-text-white" style="background-color: #272829;">
+            <button class="w3-bar-item w3-button w3-xlarge w3-round-large transition" style="margin-left: 10%; transition: all 0.2s ease-in-out; font-weight: 700;" onclick="openMenu('logo')">
+                <img src="css/logo.png" alt="logo" style="width: 40px; height: 40px; ">
+            </button>
+            <div class="w3-dropdown-hover w3-right" style="margin-right: 10%;">
+                <button class="w3-button w3-large w3-round-large transition">Lainnya</button>
+                <div class="w3-dropdown-content w3-bar-block w3-round-large w3-right w3-card-2">
+                    <button class="w3-button w3-large w3-bar-item w3-round-large transition w3-right" onclick="openMenu('Python')">Python</button>
+                    <button class="w3-button w3-large w3-bar-item w3-round-large transition" onclick="openMenu('HTML')">HTML</button>
+                    <button class="w3-button w3-large w3-bar-item w3-round-large transition" onclick="openMenu('CSS')">CSS</button>
+                </div>
+            </div>
+            <button class="w3-bar-item w3-button w3-large w3-right w3-round-large transition" onclick="openMenu('about')">About Me</button>
+            <button class="w3-bar-item w3-button w3-large w3-right w3-round-large transition" onclick="openMenu('explore')">Explore</button>
+        </div>
+
+
+    </div>
+    <div id="logo" class="menu w3-animate-opacity" style="display: block;background-image: url('assets/wave/wave-zul.svg'); background-repeat: no-repeat; background-size: cover;">
+            <div class="bjir">
+                <div class="perkenalan w3-animate-right">
+                        <h1>Saya Muhammad Fakhri Rizaldi</h1>
+                        <p>Mari belajar PYTHON,HTML Dan CSS</p>
+
+                </div>
+                <div class="container">
+                    <img src="css/wave.png" alt="wave" class="wave-img w3-animate-bottom">
+                    <img src="css/Capture-removebg-preview.png" alt="orang" class="orang w3-animate-opacity">
+                </div>
+            </div>
+        </div>
+
+        <div id="explore" class="w3-container menu w3-animate-top" style="display: none; height: 100vh;; background-repeat: no-repeat; background-size: cover;">
+            <h3 class="w3-text-black w3-xxxlarge w3-animate-opacity"style="font-weight: 700; margin-left: 15%; margin-top: 5%;">Mengapa kita harus belajar PYTHON,HTML Dan CSS?</h3>
+
+            <div class="w3-row-padding w3-center" style="margin: 0 5%;">
+                <div class="w3-col s6 w3-animate-left">
+                    <div class="w3-card-4 w3-white w3-hover-dark-gray w3-round-xlarge transition" style="width: 80%; float: right;">
+                        <div class="w3-container w3-left-align">
+                            <h1 class="w3-xxlarge" style="font-weight: 700; margin-left: 10%; margin-top: 10%;">Alasan</h1>
+                            <p style="margin: 0 10%; font-size: 20px!important">Tuntutan Pasar Kerja Keterampilan yang Diminta Penggunaan Python, HTML, dan CSS sangat diminati di industri. Kemampuan dalam bahasa ini dapat meningkatkan daya saing di pasar kerja, terutama dalam bidang pengembangan perangkat lunak dan pengembangan web.Kombinasi Python, HTML, dan CSS sering digunakan dalam pengembangan web full stack. Python sebagai bahasa backend, sedangkan HTML dan CSS untuk tampilan depan.Dengan menggunakan ketiga bahasa ini bersama-sama, Anda dapat membuat situs web yang dinamis, interaktif, dan responsif.</p>
+                        </div>          
+                        <img src="css/LOGO 1.png"alt="kumpulan logo" style="width: 100%;">  
+                    </div>
+                </div>
+                <div class="w3-col s6 w3-animate-right">
+                    <div class="w3-card-4 w3-white w3-hover-dark-gray w3-round-xlarge transition" style="width: 80%;">
+                        <div class="w3-container w3-left-align">
+                            <h1 class="w3-xxlarge" style="font-weight: 700; margin-left: 10%; margin-top: 10%;">Manfaat</h1>
+                            <p style="margin: 0 10%; font-size: 20px!important">Manfaat belajar PYTHON,HTML DAN CSS:</p>
+                            <ul style="margin: 0 10%; font-size: 20px!important">
+                                <li>PYTHON: Memungkinkan Anda untuk membuat aplikasi web, melakukan analisis data, dan mengembangkan solusi dalam berbagai bidang, termasuk kecerdasan buatan.</li>
+                                <li>HTML: Memberikan kemampuan untuk membuat struktur dasar halaman web, menentukan elemen-elemen konten, dan memahami dasar-dasar pengembangan web.</li>
+                                <li>CSS : Memungkinkan Anda mengatur tata letak, desain,dan meningkatkan estetika dan responsivitas situs.</li>
+                            </ul>
+                        </div>
+                        <img src="css/LOGO 1.png"alt="kumpulan logo" style="width: 100%;">  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="about" class="w3-animate-top menu" style="display: none; background-repeat: no-repeat; background-size: cover; height: 100vh;">
+            <center>
+                <div class="w3-card-4 w3-round-xlarge w3-animate-zoom" style="width: 60%; height: 650px; background-color: white; margin-top: 3%;">
+                    <img src="css/IMG_9588.jpg" alt="foto profil" style="width: 100%; height: 300px; object-fit: cover; border-radius: 16px 16px 0 0;">
+                    <div class="w3-display-container w3-container">
+                        <div class="w3-display-middle" style="width: 300px; margin-top: 10%;">
+                            <img src="css/Artboard 1.png" alt="foto profil" width="80%" class="w3-circle" style="border: 5px solid white; margin-top: 2%;">
+                            <p style="font-size: x-large; margin-bottom: 0;"><strong>Muhammad Fakhri rizaldi</strong></p>
+                            <p style="margin: 0; color: rgb(120, 120, 120);">NIM: 10122302 (IF-7)</p>
+                            <p style="margin: 0 0 5px 0; color: rgb(120, 120, 120);">Universitas Komputer Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+        
+        <div id="Python" class="w3-animate-top menu" style="display: none; background-repeat: no-repeat; background-size: cover; height: 100vh;">
+            <h3 class="w3-text-black w3-xxxlarge w3-animate-opacity"style="font-weight: 700; margin-left: 10%; margin-top: 5%;">Python</h3>
+            <p style="font-weight: 700; margin-left: 5%; margin-top: 2%;">Python adalah bahasa pemrograman tingkat tinggi yang serbaguna dan mudah dipahami.</p>
+            <ul style="font-weight: 700; margin-left: 5%; margin-top: %;">
+                <li>Python dirancang dengan sintaksis yang bersih dan mudah dibaca, membuatnya sangat mudah dipahami, terutama bagi pemula.</li>
+                <li>Bahasa ini mendukung gaya pemrograman yang ekspresif, memungkinkan pengembang untuk mengekspresikan ide-ide mereka dengan sedikit kode.</li>
+                <li>Python dapat digunakan untuk berbagai macam tujuan, termasuk pengembangan web, pengembangan perangkat lunak, analisis data, kecerdasan buatan, pengembangan game, dan banyak lagi.</li>
+            </ul>
+        </div>
+
+        <div id="HTML" class="w3-animate-top menu" style="display: none; background-repeat: no-repeat; background-size: cover; height: 100vh;">
+            <h3 class="w3-text-black w3-xxxlarge w3-animate-opacity"style="font-weight: 700; margin-left: 10%; margin-top: 5%;">HTML</h3>
+            <p style="font-weight: 700; margin-left: 5%; margin-top: 2%;">
+                HTML (Hypertext Markup Language) adalah bahasa markah standar yang digunakan untuk membuat dan merancang halaman web. HTML adalah bagian fundamental dari pengembangan web dan digunakan untuk mendefinisikan struktur konten dokumen web.</p>
+            <ul style="font-weight: 700; margin-left: 5%; margin-top: %;">
+                <li>HTML digunakan untuk mendefinisikan struktur dasar dokumen web. Ini melibatkan penggunaan elemen-elemen HTML untuk menandai berbagai bagian dari halaman, seperti heading, paragraf, gambar, tautan, dan lainnya.</li>
+                <li>HTML digunakan untuk menentukan dan menandai teks pada halaman web. Pengembang dapat menambahkan berbagai jenis konten seperti teks biasa, list, tabel, formulir, dan banyak lagi.</li>
+                <li>HTML bekerja bersama dengan CSS (Cascading Style Sheets) dan JavaScript untuk menciptakan pengalaman pengguna yang lengkap di web. HTML5 adalah versi terbaru dari HTML yang membawa beberapa fitur baru dan peningkatan performa, terutama dalam mendukung multimedia dan pengembangan aplikasi web modern.</li>
+            </ul>
+        </div>
+
+        <div id="CSS" class="w3-animate-top menu" style="display: none; background-repeat: no-repeat; background-size: cover; height: 100vh;">
+            <h3 class="w3-text-black w3-xxxlarge w3-animate-opacity"style="font-weight: 700; margin-left: 10%; margin-top: 5%;">CSS</h3>
+            <p style="font-weight: 700; margin-left: 5%; margin-top: 2%;">
+                CSS (Cascading Style Sheets) adalah bahasa gaya yang digunakan untuk menggambarkan presentasi tata letak dan tampilan halaman web yang ditulis dalam HTML atau XML. CSS memungkinkan pengembang web untuk mengontrol bagaimana elemen-elemen HTML ditampilkan pada layar, diucapkan, atau pada media lainnya. </p>
+            <ul style="font-weight: 700; margin-left: 5%; margin-top: %;">
+                <li>CSS digunakan untuk mengatur presentasi dan tata letak elemen-elemen HTML. Ini termasuk warna, font, margin, padding, posisi, dan ukuran elemen.</li>
+                <li>Konsep kunci dalam CSS adalah gaya berlapis. Ini berarti bahwa aturan gaya dapat berasal dari beberapa sumber, dan mereka akan bertumpuk atau bersarang dengan cara tertentu.</li>
+                <li>CSS memungkinkan pengembang untuk membuat desain responsif dan adaptif yang dapat menyesuaikan tampilan halaman dengan berbagai perangkat dan ukuran layar.</li>
+            </ul>
+        </div>
+</body>
+
+        
+
+        <script>
+            function openMenu(namaMenu) {
+                var i;
+                var x = document.getElementsByClassName("menu");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                document.getElementById(namaMenu).style.display = "block";
+            }
+        </script>
+            
+
+        
+        
+
+
+        
+
+           
+    
+
+</body>
+
+
